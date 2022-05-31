@@ -2,7 +2,7 @@
 puts "your age?"
 age=gets.to_i
 if age<18
-  puts "goodby"
+  puts "goodbye"
   exit
 end
 
