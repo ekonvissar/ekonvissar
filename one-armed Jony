@@ -1,4 +1,3 @@
-
 puts "your age?"
 age=gets.to_i
 if age<18
@@ -6,7 +5,7 @@ if age<18
   exit
 end
 
-balance = 20
+balance = 2000
 loop do
   puts "click Enter for plying"
   gets
@@ -24,23 +23,26 @@ if x==0 && y==0 && z==0
   puts "your balance is reset"
 elsif x==1 && y==1 && z==1
   balance +=10
-  puts "Your balance has increased by 10$"
+  puts "Your balance has increased by 1000$"
 elsif x==2 && y==2 && z==2
   balance +=20
-  puts "Your balance has increased by 20$"
-eelsif x==3 && y==3 && z==3
+  puts "Your balance has increased by 2000$"
+elsif x==3 && y==3 && z==3
   balance +=30
-  puts "Your balance has increased by 30$"
+  puts "Your balance has increased by 3000$"
 elsif x==4 && y==4 && z==4
   balance +=40
-  puts "Your balance has increased by 40$"
+  puts "Your balance has increased by 4000$"
 elsif x==5 && y==5 && z==5
   balance +=50
-  puts "Your balance has increased by 50$"
+  puts "Your balance has increased by 5000$"
 else
   balance -=50
-  puts "Your balance has decreased by 10$"
+  puts "Your balance has decreased by 50$"
 end
-
-puts "Your balance: #{balance}$"
+if balance<=40
+puts "Your balance: #{balance}$. You cant play more"
+break
+else puts "Your balance: #{balance}$"
+end
 end
